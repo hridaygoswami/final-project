@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Snippet - BBBootstrap</title>
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='#' rel='stylesheet'>
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        @import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
+        /* body {
+            min-height: 81.9vh;
+            font-family: 'Roboto Mono', monospace;
+            background: linear-gradient(#c1e2f1, #f7e8f6);
+        } */
+
+        .container {
+            margin-top: 250px !important;
+        }
+
+        p {
+            font-size: calc(12px + (13 - 12) * ((100vw - 360px) / (1600 - 300))) !important;
+            ;
+        }
+
+
+        button:focus {
+            box-shadow: none !important;
+            outline-width: 0;
+        }
+
+        .card {
+            background: #222222;
+            border-radius: 11px !important;
+            width: calc(280px + 10 * ((100vw - 320px) / 680));
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .card-header {
+            border: 0;
+            border-radius: 11px !important;
+
+        }
+
+        .btn-success {
+            border-radius: 20px !important;
+            background-color: #9BEAC0 !important;
+
+        }
+
+        .btn-success:hover {
+            background-color: #9BEAC0 !important;
+        }
+
+
+        .card-header {
+            background: #222222 !important;
+            position: relative;
+        }
+
+        img {
+            width: 100px !important;
+        }
+
+        .card-body {
+            border-radius: 9px !important;
+        }
+
+        .card-1 {
+            color: #A4EAC0 !important;
+        }
+
+        .cross {
+            cursor: pointer;
+            width: 45px !important;
+        }
+
+        .modal {
+            background: linear-gradient(#03a9f4, #e91ee3) !important;
+        }
+
+
+        .modal-content {
+            background: transparent !important;
+        }
+    </style>
+</head>
+
+<body className='snippet-body'>
+    <div class="container d-flex justify-content-center">
+        <button class="btn btn-primary" data-toggle="modal" data-target="#my-modal">Authentication</button>
+        <div id="my-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog  modal-dialog-centered justify-content-center " role="document">
+                <div class="modal-content  border-0 mx-3">
+                    <div class="modal-body  p-0">
+                        <div class="row justify-content-center">
+                            <div class="col-auto">
+                                <div class="card border-0 justify-content-center">
+                                    <div class="card-header pb-0 bg-white text-center">
+                                        <div class="row mb-0 justify-content-end">
+                                            <div class="col-3"><img class="img-fluid cross  mb-auto "
+                                                    src="https://i.imgur.com/YFpQ0hW.jpg" data-dismiss="modal"></div>
+                                        </div>
+                                        <div class="row mt-0">
+                                            <div class="col"><img class="img-fluid text-center"
+                                                    src="https://i.imgur.com/kmvY5wU.jpg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body text-center px-lg-5 px-md-4 mb-3">
+                                        <h6 class="card-title card-1 font-weight-bold">Successful detection</h6>
+                                        <p class="text-light">Fingerprint read successfully,click continue to perform
+                                            your action</p>
+                                        <div class="row justify-content-center mt-4">
+                                            <div class="col-8"><button type="button"
+                                                    class="btn btn-success btn-block font-weight-bold text-dark mt-3"
+                                                    data-dismiss="modal">Continue</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type='text/javascript'
+        src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
+    <script type='text/javascript' src='#'></script>
+    <script type='text/javascript' src='#'></script>
+    <script type='text/javascript' src='#'></script>
+    <script type='text/javascript' src="#"></script>
+    <script type='text/javascript'>var myLink = document.querySelector('a[href="#"]');
+        myLink.addEventListener('click', function (e) {
+            e.preventDefault();
+        });</script>
+
+</body>
+
+</html>

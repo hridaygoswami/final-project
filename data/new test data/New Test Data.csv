@@ -1,0 +1,23 @@
+Instance ID,Project Type,File Size,Programming Language,Framework,Storage Used,Network Traffic,Recommended Services,Additional Services (Optional)
+i-0123456789abcdef0,Static Website,2 GB,HTML/CSS,None,5 GB,10 MB/s,S3,-
+i-123456789abcdef1,Microservice,100 MB,Python,Flask,10 GB,20 MB/s,EC2 (t2.micro),-
+i-23456789abcdef2,Serverless Function,5 MB,Node.js,AWS Lambda,2 GB,40 MB/s,Lambda,-
+i-3456789abcdef3,Data Pipeline,10 GB,Python,Apache Airflow,50 GB,20 MB/s,Glue,-
+i-456789abcdef4,Batch Processing Application,200 MB,Python,TensorFlow,10 GB,30 MB/s,EC2 (c5.large),-
+i-56789abcdef5,Simple E-commerce Application,10 GB,Python,Django,20 GB,30 MB/s,EC2 (t2.micro) + S3 for product images,-
+i-6789abcdef6,Complex E-commerce Application,50 GB,Various,Multiple,100 GB,50 MB/s,EC2 (m5.large) + RDS (Aurora) + DynamoDB + S3,-
+i-789abcdef7,Content Management System (CMS),5 GB,Python,Django CMS,20 GB,20 MB/s,Elastic Beanstalk,-
+i-89abcdef8,NoSQL Database Application,20 GB,Python,None,30 GB,15 MB/s,DynamoDB,-
+i-9abcdef0123456789,Social Media Platform,1 TB,Multiple,Various,2 TB,100 MB/s,"Combination of services (EC2, S3, DynamoDB, RDS, etc.) based on specific functionalities",-
+i-abcdef01234567890,Data ETL Pipeline,10 GB,Python,Pandas,20 GB,30 MB/s,Glue,-
+i-0123456789abcdef0,Static Website,2 GB,HTML/CSS,None,5 GB,10 MB/s,S3,-
+i-123456789abcdef1,Blog,100 MB,Python,Django,10 GB,20 MB/s,EC2 (t2.micro),RDS (MySQL)
+i-23456789abcdef2,Microservice,5 MB,Node.js,Express.js,2 GB,40 MB/s,Lambda,DynamoDB
+i-3456789abcdef3,Data Pipeline,10 GB,Python,Apache Airflow,50 GB,20 MB/s,Glue,S3
+i-456789abcdef4,Machine Learning Model,200 MB,Python,TensorFlow,10 GB,30 MB/s,SageMaker,S3
+i-56789abcdef5,E-commerce Application,50 GB,Python,Django,100 GB,50 MB/s,EC2 (m5.large),"RDS (Aurora), S3"
+i-6789abcdef6,Mobile Backend,1 GB,JavaScript,React Native,10 GB,40 MB/s,API Gateway & Lambda,"DynamoDB, S3"
+i-789abcdef7,Content Management System (CMS),5 GB,Python,Django CMS,20 GB,20 MB/s,Elastic Beanstalk,RDS (MariaDB)
+i-89abcdef8,NoSQL Database Application,20 GB,Python,None,30 GB,15 MB/s,DynamoDB,-
+i-9abcdef0123456789,Enterprise Application,1 TB,Java,Spring Boot,2 TB,100 MB/s,EC2 (c5.xlarge),"RDS (PostgreSQL), S3"
+i-abcdef01234567890,Data ETL Pipeline,10 GB,Python,Pandas,20 GB,30 MB/s,Glue,"S3, Redshift"

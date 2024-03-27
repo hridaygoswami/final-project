@@ -1,0 +1,16 @@
+Instance ID,Service,File Size,Programming Language,Framework,Network Traffic,Storage Used,Recommended Instance Type
+i-0123456789abcdef0,Static Website,2 GB,HTML/CSS,None,10 MB/s,5 GB,t2.micro
+i-123456789abcdef1,Microservice,100 MB,Python,Flask,20 MB/s,10 GB,t2.small
+i-23456789abcdef2,Database,50 GB,SQL,None,30 MB/s,20 GB,t2.medium
+i-3456789abcdef3,Serverless Function,5 MB,Node.js,AWS Lambda,40 MB/s,2 GB,Lambda with 512 MB memory
+i-456789abcdef4,API Gateway,50 MB,Python,None,50 MB/s,5 GB,t2.small
+i-56789abcdef5,Data Streaming,100 KB/s,Python,Apache Kafka,5 MB/s,1 GB,t2.micro
+i-6789abcdef6,Batch Processing,10 GB,Java,Spring Batch,20 MB/s,50 GB,t2.medium
+i-789abcdef7,Machine Learning Model,200 MB,Python,TensorFlow,30 MB/s,10 GB,t2.large
+i-89abcdef8,Static Content Delivery Network (CDN),500 MB,Varies,Varies,50 MB/s,100 GB,m5.large
+i-9abcdef9,Content Management System (CMS),5 GB,Python,Django,20 MB/s,20 GB,t2.medium
+i-abcdef0123456789,Mobile Application Backend,1 GB,JavaScript,Node.js,40 MB/s,10 GB,t2.small
+i-cdef0123456789ab,Email Service,100 MB,Python,Flask-Mail,5 MB/s,2 GB,t2.micro
+i-fedcba0987654321,Real-time Analytics,500 MB,Python,Apache Spark,30 MB/s,20 GB,t3.large
+i-fedcba9876543210f,Chat Application,10 MB,Go,Go kit,10 MB/s,5 GB,t2.micro
+i-dcba9876543210fe,Collaborative Workspace,2 GB,JavaScript,React,20 MB/s,10 GB,t2.small

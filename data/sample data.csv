@@ -1,0 +1,11 @@
+Instance ID,Instance Type,CPU Utilization,Memory Utilization,Network In,Network Out,Storage Used,Service
+i-0123456789abcdef0,t2.micro,30%,50%,10 MB/s,5 MB/s,15 GB,Amazon S3 Static Website Hosting
+i-123456789abcdef1,t2.small,50%,70%,20 MB/s,10 MB/s,30 GB,Amazon EC2 Containerized Microservice (ECS)
+i-23456789abcdef2,t2.medium,75%,85%,30 MB/s,15 MB/s,45 GB,Amazon RDS Database
+i-3456789abcdef3,t2.large,90%,95%,40 MB/s,20 MB/s,60 GB,Amazon Lambda Serverless Function
+i-456789abcdef4,t2.xlarge,95%,98%,50 MB/s,25 MB/s,75 GB,Amazon API Gateway
+i-56789abcdef5,t2.micro,20%,40%,5 MB/s,2 MB/s,5 GB,Amazon CloudWatch Monitoring & Logging
+i-6789abcdef6,t2.small,60%,80%,15 MB/s,8 MB/s,20 GB,Amazon Kinesis Data Streaming & Analytics
+i-789abcdef7,t2.medium,80%,90%,25 MB/s,12 MB/s,35 GB,Amazon Elastic Beanstalk Web Application Deployment
+i-89abcdef8,t2.large,92%,97%,35 MB/s,18 MB/s,50 GB,Amazon DynamoDB NoSQL Database
+i-9abcdef9,t2.xlarge,98%,100%,45 MB/s,22 MB/s,65 GB,Amazon Redshift Data Warehouse
