@@ -24,17 +24,14 @@
 		<div class="header-navigation">
 			<nav class="header-navigation-links">
 				<a href="#"> Home </a>
-				<a href="#"> Dashboard </a>
-				<a href="#"> Projects </a>
-				<a href="#"> Tasks </a>
-				<a href="#"> Reporting </a>
-				<a href="#"> Users </a>
+				<a href="{% url 'Dashboard' %}"> Dashboard </a>
+				<a href="{% url 'admin'} %"> Projects </a>
 			</nav>
 			<div class="header-navigation-actions">
-				<a href="#" class="button">
+				<!-- <a href="#" class="button">
 					<i class="ph-lightning-bold"></i>
 					<span>Upgrade now</span>
-				</a>
+				</a> -->
 				<a href="#" class="icon-button">
 					<i class="ph-gear-bold"></i>
 				</a>
@@ -64,21 +61,13 @@
 			</div>
 		</div>
 		<div class="horizontal-tabs">
-			<a href="#">My details</a>
-			<a href="#">Profile</a>
-			<a href="#">Password</a>
-			<a href="#">Team</a>
-			<a href="#">Plan</a>
-			<a href="#">Billing</a>
-			<a href="#">Email</a>
-			<a href="#">Notifications</a>
+			<a href="{% url 'New_Recon' %}">New Recommendation</a>
 			<a href="#" class="active">Integrations</a>
-			<a href="#">API</a>
 		</div>
 		<div class="content-header">
 			<div class="content-header-intro">
-				<h2>Intergrations and connected apps</h2>
-				<p>Supercharge your workflow and connect the tool you use every day.</p>
+				<h2>Intergrations</h2>
+				<p>Use these integrations to supercharge your deployment process.</p>
 			</div>
 			<div class="content-header-actions">
 				<a href="#" class="button">
@@ -87,19 +76,16 @@
 				</a>
 				<a href="#" class="button">
 					<i class="ph-plus-bold"></i>
-					<span>Request integration</span>
 				</a>
 			</div>
 		</div>
 		<div class="content">
 			<div class="content-panel">
 				<div class="vertical-tabs">
-					<a href="#" class="active">View all</a>
-					<a href="#">Developer tools</a>
-					<a href="#">Communication</a>
-					<a href="#">Productivity</a>
-					<a href="#">Browser tools</a>
-					<a href="#">Marketplace</a>
+					<!-- <a href="#" class="active">View all</a> -->
+					<a href="#" class="active">Available Services</a>
+					<!-- <a href="#">Unavailable Services</a>
+					<a href="#">Developer tools</a> -->
 				</div>
 			</div>
 			<div class="content-main">
@@ -111,15 +97,15 @@
 								<h3>AWS</h3>
 							</div>
 							<label class="toggle">
-								<input type="checkbox" checked>
+								<input type="checkbox" >
 								<span></span>
 							</label>
 						</div>
 						<div class="card-body">
-							<p>Collaboration between designers and developers.</p>
+							<p>Amazon Web Services, Inc. is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis.</p>
 						</div>
 						<div class="card-footer">
-							<a href="#">View integration</a>
+							<a href="https://aws.amazon.com/console/" target="_blank">View Portal</a>
 						</div>
 					</article>
 					<article class="card">
@@ -129,15 +115,15 @@
 								<h3>DynamoDB</h3>
 							</div>
 							<label class="toggle">
-								<input type="checkbox" checked>
+								<input type="checkbox" >
 								<span></span>
 							</label>
 						</div>
 						<div class="card-body">
-							<p>Link pull requests and automate workflows.</p>
+							<p>Amazon DynamoDB is a fully managed, serverless, key-value NoSQL database that runs high-performance applications at any scale, with built-in security, continuous backups, and automated multi-region replication.</p>
 						</div>
 						<div class="card-footer">
-							<a href="#">View integration</a>
+							<a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html" target="_blank">View integration</a>
 						</div>
 					</article>
 					<article class="card">
@@ -147,35 +133,18 @@
 								<h3>EC2</h3>
 							</div>
 							<label class="toggle">
-								<input type="checkbox" checked>
+								<input type="checkbox" >
 								<span></span>
 							</label>
 						</div>
 						<div class="card-body">
-							<p>Embed file previews in projects.</p>
+							<p>Amazon EC2 provides secure, resizable compute in the cloud, offering the broadest choice of processor, storage, networking, OS, and purchase model.</p>
 						</div>
 						<div class="card-footer">
-							<a href="#">View integration</a>
+							<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html" target="_blank">View integration</a>
 						</div>
 					</article>
-					<article class="card">
-						<div class="card-header">
-							<div>
-								<span><img src="{% static 'images/58480a44cef1014c0b5e4917.png' %}" /></span>
-								<h3>Kubernetes</h3>
-							</div>
-							<label class="toggle">
-								<input type="checkbox">
-								<span></span>
-							</label>
-						</div>
-						<div class="card-body">
-							<p>Build custom automations and integrations with apps.</p>
-						</div>
-						<div class="card-footer">
-							<a href="#">View integration</a>
-						</div>
-					</article>
+					
 					<article class="card">
 						<div class="card-header">
 							<div>
@@ -183,15 +152,15 @@
 								<h3>Elastic Beanstalk</h3>
 							</div>
 							<label class="toggle">
-								<input type="checkbox" checked>
+								<input type="checkbox">
 								<span></span>
 							</label>
 						</div>
 						<div class="card-body">
-							<p>Embed notion pages and notes in projects.</p>
+							<p>AWS Elastic Beanstalk helps you deploy and manage web applications with capacity provisioning, app health monitoring, and more.</p>
 						</div>
 						<div class="card-footer">
-							<a href="#">View integration</a>
+							<a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html" target="_blank">View integration</a>
 						</div>
 					</article>
 					<article class="card">
@@ -201,15 +170,15 @@
 								<h3>Glue</h3>
 							</div>
 							<label class="toggle">
-								<input type="checkbox" checked>
+								<input type="checkbox">
 								<span></span>
 							</label>
 						</div>
 						<div class="card-body">
-							<p>Send notifications to channels and create projects.</p>
+							<p>AWS Glue is a serverless data integration service that makes it easy to discover, prepare, integrate, and modernize the extract, transform, and load (ETL) process.</p>
 						</div>
 						<div class="card-footer">
-							<a href="#">View integration</a>
+							<a href="https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html" target="_blank">View integration</a>
 						</div>
 					</article>
 					<article class="card">
@@ -219,15 +188,15 @@
 								<h3>Lambda</h3>
 							</div>
 							<label class="toggle">
-								<input type="checkbox" checked>
+								<input type="checkbox">
 								<span></span>
 							</label>
 						</div>
 						<div class="card-body">
-							<p>Link and automate Zendesk tickets.</p>
+							<p>AWS Lambda is a serverless compute service for running code without having to provision or manage servers. You pay only for the compute time you consume.</p>
 						</div>
 						<div class="card-footer">
-							<a href="#">View integration</a>
+							<a href="https://docs.aws.amazon.com/lambda/latest/dg/welcome.html" target="_blank">View integration</a>
 						</div>
 					</article>
 					<article class="card">
@@ -237,15 +206,15 @@
 								<h3>RDS</h3>
 							</div>
 							<label class="toggle">
-								<input type="checkbox">
+								<input type="checkbox" >
 								<span></span>
 							</label>
 						</div>
 						<div class="card-body">
-							<p>Plan, track, and release great software.</p>
+							<p>Amazon Relational Database Service (RDS) is a fully managed, open-source cloud database service that allows you to easily operate and scale your relational database of choice, including Amazon Aurora, PostgreSQL, SQL Server, and MySQL.</p>
 						</div>
 						<div class="card-footer">
-							<a href="#">View integration</a>
+							<a href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html" target="_blank">View integration</a>
 						</div>
 					</article>
 					<article class="card">
@@ -255,15 +224,15 @@
 								<h3>Route 53</h3>
 							</div>
 							<label class="toggle">
-								<input type="checkbox" checked>
+								<input type="checkbox" >
 								<span></span>
 							</label>
 						</div>
 						<div class="card-body">
-							<p>Everything you need for work, all in one place.</p>
+							<p>Amazon Route 53 is a highly available and scalable cloud domain name system (DNS) service. Enables to customize DNS routing policies to reduce latency.</p>
 						</div>
 						<div class="card-footer">
-							<a href="#">View integration</a>
+							<a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html" target="_blank">View integration</a>
 						</div>
 					</article>
 					<article class="card">
@@ -273,33 +242,33 @@
 								<h3>SageMaker</h3>
 							</div>
 							<label class="toggle">
-								<input type="checkbox" checked>
+								<input type="checkbox">
 								<span></span>
 							</label>
 						</div>
 						<div class="card-body">
-							<p>Link your Google account to share bookmarks across your entire team.</p>
+							<p>Build, train, and deploy machine learning (ML) models for any use case with fully managed infrastructure, tools, and workflows.</p>
 						</div>
 						<div class="card-footer">
-							<a href="#">View integration</a>
+							<a href="https://docs.aws.amazon.com/sagemaker/" target="_blank">View integration</a>
 						</div>
 					</article>
 					<article class="card">
 						<div class="card-header">
 							<div>
 								<span><img src="{% static 'images/Simple Storage Service.png' %}" /></span>
-								<h3>S3</h3>
+								<h3>Simple Storage Service (S3)</h3>
 							</div>
 							<label class="toggle">
-								<input type="checkbox" checked>
+								<input type="checkbox" >
 								<span></span>
 							</label>
 						</div>
 						<div class="card-body">
-							<p>Keep in touch with your customers without leaving the app.</p>
+							<p>Amazon Simple Storage Service (Amazon S3) is storage for the internet. You can use Amazon S3 to store and retrieve any amount of data at any time, from anywhere on the web.</p>
 						</div>
 						<div class="card-footer">
-							<a href="#">View integration</a>
+							<a href="https://docs.aws.amazon.com/s3/" target="_blank">View integration</a>
 						</div>
 					</article>
 					<article class="card">
@@ -314,10 +283,86 @@
 							</label>
 						</div>
 						<div class="card-body">
-							<p>Link your Google account to share files across your entire team.</p>
+							<p>TensorFlow is a highly flexible and versatile open-source deep learning framework for building artificial intelligence applications.</p>
 						</div>
 						<div class="card-footer">
-							<a href="#">View integration</a>
+							<a href="https://aws.amazon.com/tensorflow/getting-started/" target="_blank">View integration</a>
+						</div>
+					</article>
+					
+					<article class="card">
+						<div class="card-header">
+							<div>
+								<span><img src="{% static 'images/CloudFront.png' %}" /></span>
+								<h3>CloudFront</h3>
+							</div>
+							<label class="toggle">
+								<input type="checkbox" >
+								<span></span>
+							</label>
+						</div>
+						<div class="card-body">
+							<p>Amazon CloudFront is a content delivery network (CDN) service that helps you distribute your static and dynamic content quickly and reliably with high speed performance, security, and developer ease-of-use.</p>
+						</div>
+						<div class="card-footer">
+							<a href="https://docs.aws.amazon.com/cloudfront/" target="_blank">View integration</a>
+						</div>
+					</article>
+					
+					<article class="card">
+						<div class="card-header">
+							<div>
+								<span><img src="{% static 'images/IAM Identity Center.png' %}" /></span>
+								<h3>IAM User</h3>
+							</div>
+							<label class="toggle">
+								<input type="checkbox" >
+								<span></span>
+							</label>
+						</div>
+						<div class="card-body">
+							<p>With AWS Identity and Access Management (IAM), you can specify who or what can access services and resources in AWS, centrally manage fine-grained permissions, and analyze access to refine permissions across AWS.</p>
+						</div>
+						<div class="card-footer">
+							<a href="https://docs.aws.amazon.com/iam/" target="_blank">View integration</a>
+						</div>
+					</article>
+					
+					<article class="card">
+						<div class="card-header">
+							<div>
+								<span><img src="{% static 'images/Virtual Private Cloud.png' %}" /></span>
+								<h3>Virtual Private Cloud</h3>
+							</div>
+							<label class="toggle">
+								<input type="checkbox" >
+								<span></span>
+							</label>
+						</div>
+						<div class="card-body">
+							<p>Amazon Virtual Private Cloud (VPC) is a service that lets you launch AWS resources in a logically isolated virtual network that you define.</p>
+						</div>
+						<div class="card-footer">
+							<a href="https://docs.aws.amazon.com/vpc/" target="_blank">View integration</a>
+						</div>
+					</article>
+					
+					<article class="card">
+						<div class="card-header">
+							<div>
+								<span><img src="{% static 'images/Elastic Load Balancing.png' %}" /></span>
+								<h3>Elastic Load Balancer</h3>
+							</div>
+							<label class="toggle">
+								<input type="checkbox" >
+								<span></span>
+							</label>
+						</div>
+						<div class="card-body">
+							<p>Elastic Load Balancing (ELB) automatically distributes incoming application traffic across multiple targets and virtual appliances in one or more Availability Zones (AZs).</p>
+						</div>
+						<div class="card-footer">
+							<a href="https://docs.aws.amazon.com/elasticloadbalancing/" target="_blank">View integration</a>
 						</div>
 					</article>
 				</div>

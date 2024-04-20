@@ -1,0 +1,311 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block cards %}
+
+<!-- 
+    Required resouces:
+        EC2, done
+        ELB,
+        RDS, done
+        DynamoDB, done
+        S3, done
+        Route 53, done
+        CloudFront, done
+        IAM, done
+        VPC, done
+ -->
+ <article class="card">
+    <div class="card-header">
+        <div>
+            <!-- <span><img src="{% static 'images/aws.png' %}" /></span> -->
+            <h3>VueJS</h3>
+        </div>
+        <label class="toggle">
+            <input type="checkbox" checked>
+            <span></span>
+        </label>
+    </div>
+    <div class="card-body">
+        <p>Your project is made using VueJS.</p>
+    </div>
+    <!-- <div class="card-footer">
+        <a href="https://aws.amazon.com/console/" target="_blank">View Portal</a>
+    </div> -->
+</article>
+ <article class="card">
+    <div class="card-header">
+        <div>
+            <span><img src="{% static 'images/aws.png' %}" /></span>
+            <h3>AWS</h3>
+        </div>
+        <label class="toggle">
+            <input type="checkbox" checked>
+            <span></span>
+        </label>
+    </div>
+    <div class="card-body">
+        <p>Amazon Web Services, Inc. is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis.</p>
+    </div>
+    <div class="card-footer">
+        <a href="https://aws.amazon.com/console/" target="_blank">View Portal</a>
+    </div>
+</article>
+<article class="card">
+    <div class="card-header">
+        <div>
+            <span><img src="{% static 'images/DynamoDB.png' %}" /></span>
+            <h3>DynamoDB</h3>
+        </div>
+        <label class="toggle">
+            <input type="checkbox" checked>
+            <span></span>
+        </label>
+    </div>
+    <div class="card-body">
+        <p>Amazon DynamoDB is a fully managed, serverless, key-value NoSQL database that runs high-performance applications at any scale, with built-in security, continuous backups, and automated multi-region replication.</p>
+    </div>
+    <div class="card-footer">
+        <a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html" target="_blank">View integration</a>
+    </div>
+</article>
+<article class="card">
+    <div class="card-header">
+        <div>
+            <span><img src="{% static 'images/EC2.png' %}" /></span>
+            <h3>EC2</h3>
+        </div>
+        <label class="toggle">
+            <input type="checkbox" checked>
+            <span></span>
+        </label>
+    </div>
+    <div class="card-body">
+        <p>Amazon EC2 provides secure, resizable compute in the cloud, offering the broadest choice of processor, storage, networking, OS, and purchase model.</p>
+    </div>
+    <div class="card-footer">
+        <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html" target="_blank">View integration</a>
+    </div>
+</article>
+
+<article class="card">
+    <div class="card-header">
+        <div>
+            <span><img src="{% static 'images/Elastic Beanstalk.png' %}" /></span>
+            <h3>Elastic Beanstalk</h3>
+        </div>
+        <label class="toggle">
+            <input type="checkbox">
+            <span></span>
+        </label>
+    </div>
+    <div class="card-body">
+        <p>AWS Elastic Beanstalk helps you deploy and manage web applications with capacity provisioning, app health monitoring, and more.</p>
+    </div>
+    <div class="card-footer">
+        <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html" target="_blank">View integration</a>
+    </div>
+</article>
+<article class="card">
+    <div class="card-header">
+        <div>
+            <span><img src="{% static 'images/Glue.png' %}" /></span>
+            <h3>Glue</h3>
+        </div>
+        <label class="toggle">
+            <input type="checkbox">
+            <span></span>
+        </label>
+    </div>
+    <div class="card-body">
+        <p>AWS Glue is a serverless data integration service that makes it easy to discover, prepare, integrate, and modernize the extract, transform, and load (ETL) process.</p>
+    </div>
+    <div class="card-footer">
+        <a href="https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html" target="_blank">View integration</a>
+    </div>
+</article>
+<article class="card">
+    <div class="card-header">
+        <div>
+            <span><img src="{% static 'images/Lambda.png' %}" /></span>
+            <h3>Lambda</h3>
+        </div>
+        <label class="toggle">
+            <input type="checkbox">
+            <span></span>
+        </label>
+    </div>
+    <div class="card-body">
+        <p>AWS Lambda is a serverless compute service for running code without having to provision or manage servers. You pay only for the compute time you consume.</p>
+    </div>
+    <div class="card-footer">
+        <a href="https://docs.aws.amazon.com/lambda/latest/dg/welcome.html" target="_blank">View integration</a>
+    </div>
+</article>
+<article class="card">
+    <div class="card-header">
+        <div>
+            <span><img src="{% static 'images/RDS.png' %}" /></span>
+            <h3>RDS</h3>
+        </div>
+        <label class="toggle">
+            <input type="checkbox" checked>
+            <span></span>
+        </label>
+    </div>
+    <div class="card-body">
+        <p>Amazon Relational Database Service (RDS) is a fully managed, open-source cloud database service that allows you to easily operate and scale your relational database of choice, including Amazon Aurora, PostgreSQL, SQL Server, and MySQL.</p>
+    </div>
+    <div class="card-footer">
+        <a href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html" target="_blank">View integration</a>
+    </div>
+</article>
+<article class="card">
+    <div class="card-header">
+        <div>
+            <span><img src="{% static 'images/Route 53.png' %}" /></span>
+            <h3>Route 53</h3>
+        </div>
+        <label class="toggle">
+            <input type="checkbox" checked>
+            <span></span>
+        </label>
+    </div>
+    <div class="card-body">
+        <p>Amazon Route 53 is a highly available and scalable cloud domain name system (DNS) service. Enables to customize DNS routing policies to reduce latency.</p>
+    </div>
+    <div class="card-footer">
+        <a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html" target="_blank">View integration</a>
+    </div>
+</article>
+<article class="card">
+    <div class="card-header">
+        <div>
+            <span><img src="{% static 'images/SageMaker.png' %}" /></span>
+            <h3>SageMaker</h3>
+        </div>
+        <label class="toggle">
+            <input type="checkbox">
+            <span></span>
+        </label>
+    </div>
+    <div class="card-body">
+        <p>Build, train, and deploy machine learning (ML) models for any use case with fully managed infrastructure, tools, and workflows.</p>
+    </div>
+    <div class="card-footer">
+        <a href="https://docs.aws.amazon.com/sagemaker/" target="_blank">View integration</a>
+    </div>
+</article>
+<article class="card">
+    <div class="card-header">
+        <div>
+            <span><img src="{% static 'images/Simple Storage Service.png' %}" /></span>
+            <h3>Simple Storage Service (S3)</h3>
+        </div>
+        <label class="toggle">
+            <input type="checkbox" checked>
+            <span></span>
+        </label>
+    </div>
+    <div class="card-body">
+        <p>Amazon Simple Storage Service (Amazon S3) is storage for the internet. You can use Amazon S3 to store and retrieve any amount of data at any time, from anywhere on the web.</p>
+    </div>
+    <div class="card-footer">
+        <a href="https://docs.aws.amazon.com/s3/" target="_blank">View integration</a>
+    </div>
+</article>
+<article class="card">
+    <div class="card-header">
+        <div>
+            <span><img src="{% static 'images/TensorFlow on AWS.png' %}" /></span>
+            <h3>TensorFlow on AWS</h3>
+        </div>
+        <label class="toggle">
+            <input type="checkbox">
+            <span></span>
+        </label>
+    </div>
+    <div class="card-body">
+        <p>TensorFlow is a highly flexible and versatile open-source deep learning framework for building artificial intelligence applications.</p>
+    </div>
+    <div class="card-footer">
+        <a href="https://aws.amazon.com/tensorflow/getting-started/" target="_blank">View integration</a>
+    </div>
+</article>
+
+<article class="card">
+    <div class="card-header">
+        <div>
+            <span><img src="{% static 'images/CloudFront.png' %}" /></span>
+            <h3>CloudFront</h3>
+        </div>
+        <label class="toggle">
+            <input type="checkbox" checked>
+            <span></span>
+        </label>
+    </div>
+    <div class="card-body">
+        <p>Amazon CloudFront is a content delivery network (CDN) service that helps you distribute your static and dynamic content quickly and reliably with high speed performance, security, and developer ease-of-use.</p>
+    </div>
+    <div class="card-footer">
+        <a href="https://docs.aws.amazon.com/cloudfront/" target="_blank">View integration</a>
+    </div>
+</article>
+
+<article class="card">
+    <div class="card-header">
+        <div>
+            <span><img src="{% static 'images/IAM Identity Center.png' %}" /></span>
+            <h3>IAM User</h3>
+        </div>
+        <label class="toggle">
+            <input type="checkbox" checked>
+            <span></span>
+        </label>
+    </div>
+    <div class="card-body">
+        <p>With AWS Identity and Access Management (IAM), you can specify who or what can access services and resources in AWS, centrally manage fine-grained permissions, and analyze access to refine permissions across AWS.</p>
+    </div>
+    <div class="card-footer">
+        <a href="https://docs.aws.amazon.com/iam/" target="_blank">View integration</a>
+    </div>
+</article>
+
+<article class="card">
+    <div class="card-header">
+        <div>
+            <span><img src="{% static 'images/Virtual Private Cloud.png' %}" /></span>
+            <h3>Virtual Private Cloud</h3>
+        </div>
+        <label class="toggle">
+            <input type="checkbox" checked>
+            <span></span>
+        </label>
+    </div>
+    <div class="card-body">
+        <p>Amazon Virtual Private Cloud (VPC) is a service that lets you launch AWS resources in a logically isolated virtual network that you define.</p>
+    </div>
+    <div class="card-footer">
+        <a href="https://docs.aws.amazon.com/vpc/" target="_blank">View integration</a>
+    </div>
+</article>
+
+<article class="card">
+    <div class="card-header">
+        <div>
+            <span><img src="{% static 'images/Elastic Load Balancing.png' %}" /></span>
+            <h3>Elastic Load Balancer</h3>
+        </div>
+        <label class="toggle">
+            <input type="checkbox" checked>
+            <span></span>
+        </label>
+    </div>
+    <div class="card-body">
+        <p>Elastic Load Balancing (ELB) automatically distributes incoming application traffic across multiple targets and virtual appliances in one or more Availability Zones (AZs).</p>
+    </div>
+    <div class="card-footer">
+        <a href="https://docs.aws.amazon.com/elasticloadbalancing/" target="_blank">View integration</a>
+    </div>
+</article>
+
+{% endblock %}

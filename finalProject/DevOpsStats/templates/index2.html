@@ -16,7 +16,7 @@
     <h1>Welcome to Hostwise</h1>
     <h2>Your deployment resource recommendor</h2>
     <br><br>
-    <form method="post" action="{% url 'Redirect' %}">
+    <form method="post" action="{% url 'Redirect' %}" target="_parent">
         {% csrf_token %}
         <input type="text" name="name" class="question" id="nme" required autocomplete="off" />
         <label for="nme"><span>What's your project GitHub URL?</span></label>

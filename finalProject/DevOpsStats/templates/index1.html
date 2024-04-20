@@ -15,7 +15,7 @@
 <body>
     <!-- partial:index.partial.html -->
     <label>
-        <form action="{% url 'Redirect' %}" method="post">
+        <form action="{% url 'Redirect' %}" target="_parent" method="post">
             {% csrf_token %}
             <input type="text" name="name" id="name" required>
             <ul>
