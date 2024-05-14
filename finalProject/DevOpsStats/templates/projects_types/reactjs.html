@@ -20,10 +20,10 @@
             <!-- <span><img src="{% static 'images/aws.png' %}" /></span> -->
             <h3>ReactJS</h3>
         </div>
-        <label class="toggle">
+        <!-- <label class="toggle">
             <input type="checkbox" checked>
             <span></span>
-        </label>
+        </label> -->
     </div>
     <div class="card-body">
         <p>Your project belongs to the MERN.</p>
@@ -307,5 +307,27 @@
         <a href="https://docs.aws.amazon.com/elasticloadbalancing/" target="_blank">View integration</a>
     </div>
 </article>
+
+
+{% for service in services %}
+<article class="card">
+    <div class="card-header">
+        <div>
+            <span><img src="{% static 'images/Elastic Load Balancing.png' %}" /></span>
+            <h3>{{service.name}}</h3>
+        </div>
+        <label class="toggle">
+            <input type="checkbox" >
+            <span></span>
+        </label>
+    </div>
+    <div class="card-body">
+        <p>{{service.desc}}</p>
+    </div>
+    <div class="card-footer">
+        <a href="{{service.link}}" target="_blank">View integration</a>
+    </div>
+</article>
+{% endfor %}
 
 {% endblock %}

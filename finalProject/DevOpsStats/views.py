@@ -3,7 +3,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 from random import randint
 import subprocess
 import os 
-from .models import collectedData, services
+from .models import collectedData, services, newServices
 # Create your views here.
 
 def detect_technology(file_extensions):
@@ -128,53 +128,54 @@ def er404(request):
 # project pages
 
 def reactjs(request):
-    s = services.objects.all()
+    s = newServices.objects.all()
     return render(request, "projects_types/reactjs.html", {
         "services":s
     })
 
 def data_analytics(request):
-    s = services.objects.all()
+    s = newServices.objects.all()
 
     return render(request, "projects_types/data_analytics.html", {
         "services":s
     })
 
 def data_science(request):
-    s = services.objects.all()
+    s = newServices.objects.all()
 
     return render(request, "projects_types/data_science.html", {
         "services":s
     })
 
 def django(request):
+    s = newServices.objects.all()
     return render(request, "projects_types/django.html", {
         "services":s
     })
 
 def flask(request):
-    s = services.objects.all()
+    s = newServices.objects.all()
 
     return render(request, "projects_types/flask.html", {
         "services":s
     })
 
 def machine_learning(request):
-    s = services.objects.all()
+    s = newServices.objects.all()
 
     return render(request, "projects_types/machine_learning.html", {
         "services":s
     })
 
 def nextjs(request):
-    s = services.objects.all()
+    s = newServices.objects.all()
 
     return render(request, "projects_types/nextjs.html", {
         "services":s
     })
 
 def vuejs(request):
-    s = services.objects.all()
+    s = newServices.objects.all()
 
     return render(request, "projects_types/vuejs.html", {
         "services":s
