@@ -3,6 +3,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 from random import randint
 import subprocess
 import os 
+from .models import collectedData, services
 # Create your views here.
 
 def detect_technology(file_extensions):
@@ -32,7 +33,7 @@ def detect_technology(file_extensions):
     elif any(ext in machine_learning_extensions for ext in file_extensions):
         return "machine_learning"
     else:
-        return "Unknown"
+        return "error"
 
 
 def clone_repo(repo_url, destination_path):
@@ -102,12 +103,16 @@ def redirect(request):
         print(total_size_mb, extensions)
         technology = detect_technology(extensions)
         print(technology)
-        return HttpResponseRedirect(f"dashboard/{technology}")
-
+        if(technology == "error"): 
+            return HttpResponseRedirect(f"{technology}")
+        else:
+            d = collectedData(project_url=link, project_extensions=str(extensions))
+            d.save()
+            return HttpResponseRedirect(f"dashboard/{technology}")
     else:
         print("Not a valid GIT url")
     # return HttpResponse("Redirecting...")
-    # return HttpResponseRedirect("error")
+        return HttpResponseRedirect("error")
 
 
 def new_recon(request):
@@ -123,25 +128,54 @@ def er404(request):
 # project pages
 
 def reactjs(request):
-    return render(request, "projects_types/reactjs.html")
+    s = services.objects.all()
+    return render(request, "projects_types/reactjs.html", {
+        "services":s
+    })
 
 def data_analytics(request):
-    return render(request, "projects_types/data_analytics.html")
+    s = services.objects.all()
+
+    return render(request, "projects_types/data_analytics.html", {
+        "services":s
+    })
 
 def data_science(request):
-    return render(request, "projects_types/data_science.html")
+    s = services.objects.all()
+
+    return render(request, "projects_types/data_science.html", {
+        "services":s
+    })
 
 def django(request):
-    return render(request, "projects_types/django.html")
+    return render(request, "projects_types/django.html", {
+        "services":s
+    })
 
 def flask(request):
-    return render(request, "projects_types/flask.html")
+    s = services.objects.all()
+
+    return render(request, "projects_types/flask.html", {
+        "services":s
+    })
 
 def machine_learning(request):
-    return render(request, "projects_types/machine_learning.html")
+    s = services.objects.all()
+
+    return render(request, "projects_types/machine_learning.html", {
+        "services":s
+    })
 
 def nextjs(request):
-    return render(request, "projects_types/nextjs.html")
+    s = services.objects.all()
+
+    return render(request, "projects_types/nextjs.html", {
+        "services":s
+    })
 
 def vuejs(request):
-    return render(request, "projects_types/vuejs.html")
+    s = services.objects.all()
+
+    return render(request, "projects_types/vuejs.html", {
+        "services":s
+    })
