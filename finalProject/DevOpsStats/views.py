@@ -4,6 +4,7 @@ from random import randint
 import subprocess
 import os 
 from .models import collectedData, services, newServices
+import requests
 # Create your views here.
 
 def detect_technology(file_extensions):
@@ -15,7 +16,6 @@ def detect_technology(file_extensions):
     data_science_extensions = {".ipynb", ".py"}
     data_analytics_extensions = {".sql", ".csv", ".xlsx"}
     machine_learning_extensions = {".ipynb", ".py"}
-    
     if any(ext in reactjs_extensions for ext in file_extensions):
         return "reactjs"
     elif any(ext in nextjs_extensions for ext in file_extensions):
@@ -35,6 +35,9 @@ def detect_technology(file_extensions):
     else:
         return "error"
 
+def getPredictions(size):
+    data = requests.get(f"http://localhost:8080/{size}")
+    return data.json()
 
 def clone_repo(repo_url, destination_path):
     try:
